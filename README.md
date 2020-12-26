@@ -1,3 +1,7 @@
+todo-app
+This is a simple todo list application using HTML, Typescript and CSS.
+
+
 # TodoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
