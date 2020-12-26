@@ -1,0 +1,38 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<body>
+<h1> To Do List </h1>
+
+<div class="newItemHolder">
+<input class="inputholder" type="text" #newTodo placeholder="Enter todo item..." >
+<button (click)="addItem(newTodo.value); newTodo.value=''"> <b>Add</b> </button>
+</div>
+
+<div class="table">
+  <table>
+    <thead class="grey lighten-1 black-text">
+    <tr> 
+    <th>Todo </th>
+    <th>Status</th>  
+    </tr>  
+  </thead>
+
+    <tr *ngFor = "let item of todos">  
+     <td><a> {{ item.label }} </a></td>  
+     <td><a> {{ item.done ? 'Completed' : 'Active' }} </a></td>  
+
+     <td>
+       <button (click)="removeItem(item)" > <i class="fa fa-trash"> </i> </button>
+     </td>
+     <td>
+      <button type="button" (click)="completeItem(item)"> <b>&#10003;</b> </button>
+    </td>
+
+    </tr>  
+   </table> 
+</div>
+
+</body>

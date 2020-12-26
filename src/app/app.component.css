@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
+
+body {
+  /* color: #4a5b65; */
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  padding: 10px;
+  margin: 50px;
+}
+
+/* TO DO LIST
+================================================== */
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-bottom: 20px;
+  display: block;
+}
+
+a {
+  padding-bottom: 10px;
+  display: block;
+}
+
+.newItemHolder {
+  padding-bottom: 10px;
+  padding: 10px;
+}
+
+.newItemHolder button {
+  padding: 4.3px;
+  margin: 5px;
+}
+
+th {
+  padding: 10px;
+}
+
+tr {
+  line-height: 20px;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
