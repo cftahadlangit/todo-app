@@ -1,4 +1,4 @@
-todo-app
+# todo-app
 This is a simple todo list application using HTML, Typescript and CSS.
 
 
